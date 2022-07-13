@@ -1,0 +1,1659 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* 
+ * global
+**/
+* {
+	outline: none;
+	box-sizing: border-box;
+}
+
+.n1, .n2, .n3, .n4, .n5, .n6, .n8, .n10 {
+	display: inline-block;
+}
+.n1 {
+	width: 5.5%;
+}
+.n2 {
+	width: 11%;
+}
+.n3 {
+	width: 16.5%;
+}
+.n4 {
+	width: 22%;
+}
+.n5 {
+	width: 27.5%;
+}
+.n6 {
+	width: 33%;
+}
+.n7 {
+	width: 38.5%;
+}
+.n8 {
+	width: 44%;
+}
+.n10 {
+	width: 55%;
+}
+.zebra:nth-child(2n+1) {
+	/* background-color: rgba(0, 0, 0, .05); */
+}
+
+form .invalid {
+	transition: 0.2s all;
+	border-color: #a00 !important;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.container .list {
+	margin-bottom: 20px;
+}
+.container .list .re {
+	position: relative;
+	padding: 5px;
+}
+.container .list .re.head {
+	color: rgba(0, 0, 0, 0.45);
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.container .list .re > * {
+	display: inline-block;
+	text-align: center;
+}
+.container .list .re:nth-child(odd) {
+	background-color: rgba(0, 0, 0, 0.03);
+}
+.container .list .re .tools {
+	float: rightt;
+    padding-rightt: 7px;
+    text-align: rightt;
+}
+.euro_prefix:before {
+	content: "Ã¢â€šÂ¬";
+	opacity: 0.5;
+	padding-rightt: 1px;
+}
+
+.container .formInner {
+	margin: 30px auto 15px;
+}
+.half ,
+.container .formInner .left ,
+.container .formInner .rightt {
+	display: inline-block;
+	vertical-align: top;
+}
+.container .formInner .rightt {
+	text-align: center;
+}
+.container .formInner .re {
+	margin: 10px auto;
+}
+.container .formInner .re > * {
+	display: inline-block;
+}
+.container .formInner .re > span {
+	width: 15%;
+	text-align: rightt;
+	padding-rightt: 12px;
+	vertical-align: top;
+	padding-top: 4px;
+	cursor: default;
+	opacity: 0.7;
+}
+.container .formInner .re > div {
+	width: calc( 100% - 16% );
+}
+
+.formInner > .rightt > div {
+	display: inline-block;
+	text-align: center;
+	padding: 5px 10px;
+	vertical-align: top;
+	background-color: #f8f8f8;
+	border-radius: 30px;
+}
+.formInner > .rightt > div > .text {
+	color: green;
+	line-height: 0.5;
+	margin: 0 -5px;
+	font-size: 13px;
+}
+.formInner > .rightt .separator {
+	font-size: 24px;
+	color: red;
+	vertical-align: top;
+}
+.formInner > .rightt .fee ,
+.formInner > .rightt .bee {
+	font-size: 18px;
+}
+.formInner > .rightt .payable {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+textarea, input[type=text], input[type=email], input[type=number] {
+	outline: none;
+	padding: 4px 8px;
+	background-color: #fafafa;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+select {
+	background-color: #fafafa;
+    height: 33px;
+    border: 1px solid #dddddd;
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.half {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+
+div.norecord {
+	margin: 90px auto;
+	text-align: center;
+}
+
+.date_view {
+	display: inline-block;
+	line-height: 1;
+	height: 30px;
+	text-align: center;
+	position: relative; top: 5px;
+	margin-bottom: -15px;
+}
+.date_view > span {
+	display: block;
+}
+.date_view > span:first-child {
+	font-size: 14px;
+}
+.date_view > span:last-child {
+	font-size: 9px;
+	opacity: 0.5;
+}
+
+.fee:before {
+	content: "$";
+}
+
+.container .list .pagination {
+	margin-top: 20px;
+}
+
+div.hr {
+	border-bottom: 1px dashed rgba(0, 0, 0, .15);
+	padding-bottom: 15px !important;
+	margin-bottom: 15px;
+}
+div.br {
+	display: block !important;
+	width: 100%;
+	background: transparent !important;
+}
+
+
+
+
+
+/* 
+ * alerty
+**/
+
+#alerty {
+	cursor: default;
+	position: fixed;
+	left: 30px;
+	bottom: 30px;
+	z-index: 1111;
+}
+#alerty .msg {
+	max-width: 400px;
+	margin: 15px 0 0 0;
+	padding: 12px 20px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, .5);
+	border-radius: 6px;
+	background-color: white;
+	transition: all 1s;
+	font-size: 13px;
+}
+
+#alerty .msg.hide {
+	opacity: 0.0;
+}
+
+
+body {
+	background-color: #011b39;
+	background-image: url('../../../client.iptvtree.com/image/blue-background.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	background-attachment: fixed;
+}
+body .card {
+	/* padding: 5vh 5vw; */
+	padding: 30px 30px 20px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.53);
+}
+body .card .card-header {
+	background-color: transparent;
+	color: #194d7e;
+	border: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+    font-size: 30px;
+    padding: 0 1.25rem;
+    margin-bottom: -10px;
+    /* font-family: "Open Sans",Verdana,Tahoma,serif; */
+}
+body.guest main {
+	margin-top: calc( 50vh - 200px );
+}
+
+.container.reset .re {
+	margin: 10px 0;
+}
+
+body main .login .re ,
+body main .register .re {
+	margin-bottom: 10px;
+}
+body.guest main input {
+	transition: all 0.5s;
+	box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset !important;
+}
+body.guest main input:focus  {
+	transition: none;
+	box-shadow: 0 0 7px rgba(0, 0, 0, .2) !important;
+	border: 1px solid #ccc;
+}
+body .hr {
+	/* margin-bottom: 0; */
+}
+body .gray {
+	padding-left: 10px;
+	padding-rightt: 0;
+	display: inline-block;
+	margin-rightt: -3px;
+	color: gray;
+}
+body .forgot {
+	padding-left: 0;
+	padding-bottom: 0;
+	margin-bottom: -10px;
+}
+
+.container.changePassword {
+	margin-top: calc( 50vh - 270px );
+}
+.container.changePassword .inner {
+	padding: 30px 0;
+}
+.container.changePassword .card-body {
+	padding-bottom: 0;
+}
+@media (min-width: 768px){
+	body .col-md-6 {
+		max-width: 440px;
+	}
+}
+
+
+.logged .card {
+	padding: 20px 25px 40px;
+}
+.logged .card-body {
+	padding: 0.0rem;
+}
+.logged .card-top {
+	color: #ccc;
+	cursor: default;
+	font-size: 22px;
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.logged .card-top .head {
+	line-height: 1;
+}
+.logged .card-top .head > * {
+	font-size: 24px;
+    text-transform: uppercase;
+}
+.logged .card-top .head > span {
+	color: rgba(0, 0, 0, 0.7);
+}
+.logged .card-top .head > a {
+	cursor: pointer;
+}
+
+.container.ticket.new form .inner {
+	padding: 50px 0 40px 0;
+}
+.container.ticket.new form .re {
+	margin-bottom: 10px;
+}
+.container.ticket.new form .re > span {
+	width: 130px;
+	text-align: rightt;
+	display: inline-block;
+	padding-rightt: 15px;
+	vertical-align: top;
+	padding-top: 5px;
+    /* text-transform: uppercase; */
+}
+.container.ticket.new form .re > div ,
+.container.ticket.new form .re > textarea ,
+.container.ticket.new form .re > input[name=name] {
+	display: inline-block;
+	width: calc( 95% - 140px );
+}
+.container.ticket.new form input[type=text] ,
+.container.ticket.new form select ,
+.container.ticket.new form textarea {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset !important;
+	outline: none;
+	padding: 6px 12px;
+}
+.container.ticket.new form select {
+	height: 36px;
+	width: 200px;
+}
+.container.ticket.new form input[type=file] {
+	/* margin: 0 0 10px; */
+}
+.container.ticket.new form textarea {
+	height: 200px;
+}
+.container.ticket.new form input:focus ,
+.container.ticket.new form select:focus ,
+.container.ticket.new form textarea:focus {
+	box-shadow: 0 0 7px rgba(0, 0, 0, .2) !important;
+}
+
+.container.ticket.list .new {
+	float: rightt;
+}
+.container.ticket.list .list {
+
+}
+.container.ticket.list .list .re {
+	padding: 12px;
+}
+.client .container.ticket.list .list .re .name a {
+	font-weight: bold;
+}
+.container.ticket.list .list .re.viewed .name a {
+	font-weight: normal !important;
+}
+.container.ticket.list .list .re:nth-child(odd) {
+	background-color: rgba(0, 0, 0, 0.03);
+}
+.container.ticket.list .re > * {
+	display: inline-block;
+	/* padding: 10px 4px; */
+	text-align: center;
+}
+.container.ticket.list .re > .name {
+	text-align: left;
+}
+.container.ticket.list .date_view {
+	position: relative;
+    top: 6px;
+    margin-top: -5px;
+    margin-bottom: -2px;
+}
+
+
+.admin .list .re .date_created ,
+.admin .list .re .date_due {
+	width: 110px;
+}
+
+.admin .list .re .etc > * {
+	color: black;
+}
+.admin .list .re .etc > *:hover {
+	color: orangered;
+}
+
+
+
+.container.ticket.view .list {
+	margin-top: 40px;
+}
+.container.ticket.view .re {
+	margin-bottom: 10px;
+	position: relative;
+}
+.container.ticket.view .re > * {
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+}
+
+.container.ticket.view .re .sender {
+	padding: 20px 0 0 0;
+	width: 220px;
+	text-align: center;
+}
+.container.ticket.view .re .sender .name {
+	font-size: 18px;
+}
+.container.ticket.view .re .sender .role {
+	font-size: 13px;
+	opacity: 0.6;
+	padding-top: 10px;
+}
+.container.ticket.view .re.admin {
+	background-color: #ff000005;
+	border: 1px solid #8600000f;
+	color: #521212;
+}
+.container.ticket.view .re.client {
+	background-color: #007cff08;
+	border: 1px solid #007cff14;
+	color: #003361;
+}
+.container.ticket.view .re .message {
+	min-height: 140px;
+	width: calc( 100% - 220px );
+	border-left: 1px solid rgba(0, 0, 0, 0.05);
+	text-align: left;
+}
+.container.ticket.view .re .message .attcs {
+	margin-top: 20px;
+	/*margin-left: 5px;*/
+}
+
+.container.ticket.view .re .message .attcs a {
+	display: block;
+}
+.container.ticket.view .re .message .attcs i {
+	margin-rightt: 7px;
+}
+.container.ticket.view .re .message .attcs .size {
+	display: inline-block;
+	margin-left: 5px;
+}
+.container.ticket.view .re .sender .date {
+	/* float: buttom; */
+	text-align: left;
+	font-size: 11px;
+	position: absolute; bottom: 13px; left: 17px;
+	opacity: 0.5;
+}
+
+.container.ticket.view form {
+	background-color: #ececec73;
+    padding: 20px 30px;
+    margin: -19px 0 -14px 0;
+}
+.container.ticket.view form .inner {
+	padding: 10px 0 0px 0;
+}
+.container.ticket.view form .re {
+	margin-bottom: 10px;
+}
+.container.ticket.view form .re > span {
+	width: 130px;
+	text-align: rightt;
+	display: inline-block;
+	padding-rightt: 15px;
+	vertical-align: top;
+	padding-top: 5px;
+    text-transform: uppercase;
+}
+.container.ticket.view form .re > div ,
+.container.ticket.view form .re > textarea {
+	display: inline-block;
+	/* width: calc( 95% - 140px ); */
+	width: 100%;
+}
+.container.ticket.view form textarea {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, .1) inset !important;
+	outline: none;
+	padding: 6px 12px;
+}
+.container.ticket.view form textarea {
+	height: 200px;
+}
+.container.ticket.view form textarea:focus {
+	box-shadow: 0 0 7px rgba(0, 0, 0, .1) !important;
+}
+.container.ticket.view form input[type=file] {
+	/* margin: 5px 0; */
+}
+.container.ticket.view form .re_inner {
+	padding: 0;
+}
+.container.ticket.view form input[type=submit] {
+	/* float: rightt; */
+	line-height: 1;
+}
+.container.ticket.view .re.submit {
+	margin-bottom: 0;
+}
+
+
+.container.service.list {
+	vertical-align: top;
+}
+.container.service.list .norecord {
+	margin: 20px auto 15px;
+}
+
+.container.service.list .new-order {
+	float: rightt;
+}
+
+.container.service.list .re {
+	/* padding: 5px; */
+	vertical-align: top;
+}
+.container.service.list .re.refunded > * {
+	color: orange;
+}
+.container.service.list .re > * {
+	text-align: center;
+	color: #666;
+}
+.container.service.list .re.expired > * {
+	color: #d60000;
+}
+.container.service.list .re.test > * {
+	color: #0074daa6;
+}
+.container.service.list .re .btn {
+	line-height: 1;
+	font-size: 11px;
+    padding: 5px 3px;
+}
+.container.service.list .re .btn.status ,
+.container.service.list .re .btn.remove {
+	width: 50px;
+}
+.container.service.list .re .btn.paynow ,
+.container.service.list .re .btn.cancelled {
+	width: 60px;
+}
+.container.service.list .section {
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-radius: 20px;
+	padding: 10px;
+	margin: 40px 0 0 0;
+}
+.container.service.list .section .list {
+	margin-bottom: 0px;
+}
+.container.service.list .section > .head {
+	margin-top: -40px;
+	padding-left: 20px;
+	margin-bottom: 7px;
+}
+.container.service.list .section > .head > * {
+	position: relative;
+	top: 10px;
+}
+.container.service.list .section > .head span {
+	font-size: 20px;
+	padding: 2px 7px;
+	color: #ccc;
+	background-color: white;
+	display: inline-block;
+}
+.container.service.list .section > .head .title {
+	cursor: default;
+}
+.container.service.list .section > .head .new {
+	font-size: 17px;
+	float: rightt;
+    margin-rightt: 20px;
+    margin-top: 2.5px;
+    color: rgba(0, 0, 0, .2)
+}
+.container.service.list .section > .head .new > a {
+    color: rgba(0, 0, 0, .3);
+}
+.container.service.list .section:hover > .head .new {
+    color: rgba(0, 0, 0, .4)
+}
+.container.service.list .section:hover > .head .new > a {
+	color: #3490dc;
+}
+
+.container.service.list .re:first-child {
+	border-radius: 8px 8px 0 0;
+}
+.container.service.list .re:last-child {
+	border-radius: 0 0 8px 8px;
+}
+.container.service.list .re > .id {
+	font-size: 10px;
+}
+
+.line-get .the_line {
+	margin: 6% 0 7%;
+}
+.line-get .re {
+	margin: 10px 10%;
+}
+.line-get .re > div {
+	font-size: 18px;
+	opacity: 0.5;
+}
+.line-get .re > textarea {
+	width: 100%;
+	resize: none;
+}
+.line-get .re > div.portaldetail {
+	outline: none;
+    padding: 4px 8px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font: 400 14px system-ui;
+    color: black;
+    line-height: 1.5;
+    opacity: 1;
+}
+.line-get .re > div.portaldetail .memo {
+	width: 90px;
+	display: inline-block;
+}
+
+.line-form form .formInner {
+	padding: 45px 0 30px 0;
+}
+.line-form .half > div {
+	vertical-align: top;
+	margin-bottom: 10px;
+}
+.line-form .half span {
+	width: 160px;
+	display: inline-block;
+	text-align: rightt;
+	padding-rightt: 20px;
+	font-size: 18px;
+	vertical-align: top;
+}
+.line-form .half textarea {
+	width: calc( 100% - 200px );
+    height: 100px;
+}
+.line-form .half > div > div {
+	display: inline-block;
+	width: calc( 100% - 170px );
+}
+.line-form .half > div > div label {
+	display: inline-block;
+	width: 24%;
+	padding: 0px 0px 0px 10px;
+	margin-bottom: 0;
+}
+.line-form .half > div > div label:hover {
+	background-color: #f8f8f8;
+}
+.line-form .prompt {
+	padding-left: 30px;
+	color: #a00;
+}
+.line-form .bq_pkg {
+	margin-bottom: 3.5px;
+}
+
+
+/*
+ * service reseller addcredit
+ * */
+.reseller-credit form .formInner {
+	padding: 45px 0 30px 0;
+}
+.reseller-credit form .formInner > div {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.reseller-credit form .formInner > .left > div {
+	margin-bottom: 10px;
+}
+.reseller-credit form .formInner > .left span {
+	width: 150px;
+	display: inline-block;
+	text-align: rightt;
+	padding-rightt: 10px;
+	font-size: 18px;
+}
+/*
+.reseller-credit form .formInner > .rightt > div {
+	display: inline-block;
+	text-align: center;
+	padding: 5px 10px;
+	vertical-align: top;
+	background-color: #f8f8f8;
+	border-radius: 30px;
+}
+.reseller-credit form .formInner > .rightt > div > .text {
+	color: green;
+	line-height: 0.5;
+}
+.reseller-credit form .formInner > .rightt .separator {
+	font-size: 24px;
+	color: red;
+	vertical-align: top;
+}
+.reseller-credit form .formInner > .rightt .fee ,
+.reseller-credit form .formInner > .rightt .bee {
+	font-size: 18px;
+}
+.reseller-credit form .formInner > .rightt .payable {
+	font-size: 28px;
+	font-weight: bold;
+}
+*/
+
+
+.container.invoice-list {
+	
+}
+.container.invoice-list .btn {
+	width: 70px;
+}
+.container.invoice-list .status.paid {
+	color: green;
+}
+.container.invoice-list .status.unpaid {
+	color: #9e0000;
+}
+.container.invoice-list .status.refunded {
+	color: #ffa500;
+}
+.container.invoice-list .re .client {
+	text-align: left;
+	padding-left: 10px;
+}
+
+.container.line-extend .re label {
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 0;
+}
+.container.line-extend .re label input {
+	margin-rightt: 10px;
+}
+.container.line-extend .re > span {
+	width: 150px;
+	padding-rightt: 30px;
+}
+.container.line-extend .re > div {
+	width: calc( 100% - 155px );
+}
+.container.line-extend .formInner {
+	margin: calc(5vh + 20px) auto 5vh;
+}
+.container.line-extend .formInner .payable {
+	transform: scale(1.5);
+}
+
+
+
+
+/*
+ * invoice view
+ * */
+
+.container.invoice-view {
+	margin: 20px auto;
+}
+.container.invoice-view .card {
+	width: 800px;
+	max-width: 95%;
+	padding: 50px 60px 60px;
+}
+.container.invoice-view .card-top {
+	margin-bottom: 45px;
+	padding-bottom: 45px;
+}
+.container.invoice-view .logo {
+	display: block;
+	height: 42px;
+}
+.container.invoice-view .invoice-id {
+	display: block;
+	color: black;
+	padding: 20px 0 0 20px;
+}
+.container.invoice-view .status {
+	text-align: center;
+	vertical-align: top;
+	padding: 20px 0 0 0;
+}
+.container.invoice-view .status b {
+	font-weight: bold;
+	font-size: 48px;
+}
+.container.invoice-view .status.paid b {
+	color: green;
+}
+.container.invoice-view .status.refunded b {
+	color: #ffa500;
+}
+.container.invoice-view .status.refunded div {
+	text-transform: capitalize;	
+}
+.container.invoice-view .status.unpaid b {
+	color: #cc0000;
+}
+.container.invoice-view .status .at {
+	text-transform: lowercase;
+    font-size: 14px;
+    color: #0050008c;
+    margin-top: 6px;
+    margin-bottom: -6px;
+}
+.container.invoice-view .desc b {
+	font-weight: bold;
+	color: black;
+	font-size: 20px;
+}
+.container.invoice-view .desc .rightt {
+	text-align: rightt;
+}
+.container.invoice-view .back {
+	display: block;
+	text-align: center;
+}
+.container.invoice-view .back a {
+	padding: 10px;
+	color: white;
+	text-shadow: 0 0 3px black;
+	display: inline-block;
+}
+.container.invoice-view .curved {
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 20px;
+	padding: 5px 5px;
+	margin: 45px 0 0 0;
+}
+.container.invoice-view .curved > div {
+	color: rgba(0, 0, 0, .7);
+	padding-left: 20px;
+}
+.container.invoice-view .curved > div > div {
+	display: inline-block;
+}
+.container.invoice-view .curved > div > div:first-child {
+	width: calc( 100% - 125px );
+}
+.container.invoice-view .curved > div > div:last-child {
+	width: 120px;
+	text-align: center;
+}
+.container.invoice-view .curved > div:first-child {
+	border-bottom: 1px dashed rgba(0, 0, 0, .1);
+	margin-bottom: 15px;
+	padding: 7px 0 7px 20px;
+	font-weight: bold;
+	color: black;
+	background-color: rgba(0, 0, 0, 0.04);
+	border-radius: 15px 15px 0 0;
+}
+.container.invoice-view .curved > div:nth-child(2) {
+	border-bottom: 1px dashed rgba(0, 0, 0, .08);
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+}
+.container.invoice-view .curved > div:last-child {
+	border-top: 1px dashed rgba(0, 0, 0, .1);
+	color: black;
+	font-weight: bold;
+	margin-top: 15px;
+	padding: 7px 0 7px 20px;
+	background-color: rgba(0, 0, 0, 0.04);
+	border-radius: 0 0 15px 15px;
+}
+.container.invoice-view .payment_detail {
+	margin-top: 50px;
+	color: rgba(0, 0, 0, .7);
+}
+.container.invoice-view .payment_detail .hr {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+.container.invoice-view .payment_detail .head {
+	color: black;
+	font-weight: bold;
+}
+.container.invoice-view .payment_detail .re > div {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+}
+.container.invoice-view .desc .rightt select[name=method] {
+
+}
+
+.container.invoice-view .pay_now {
+	display: inline-block;
+	position: relative; top: -10px;
+	opacity: 0.8;
+	transition: 0.2s all;
+}
+.container.invoice-view .pay_now:hover {
+	opacity: 1;
+}
+.container.invoice-view .pay_now img {
+	height: 60px;
+}
+
+.container.invoice-view .policy_confirm {
+	margin: 40px auto 0 auto;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	opacity: 1;
+	border-radius: 8px;
+	background-color: #f8f8f8;
+	padding: 12px;
+	font-size: 18px;
+
+}
+.container.invoice-view .policy_confirm:hover {
+	opacity: 0.9;
+}
+
+
+
+/*
+ * reseller
+ * */
+.reseller-newForm form .formInner {
+	padding: 45px 0 30px 0;
+}
+.reseller-newForm form .formInner > div {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.reseller-newForm form .formInner > div {
+	margin-bottom: 10px;
+}
+.reseller-newForm form .formInner span {
+	width: 150px;
+	display: inline-block;
+	text-align: rightt;
+	padding-rightt: 10px;
+	font-size: 18px;
+}
+.nav-item.dropdown.credit {
+	background-color: #d9edff;
+    margin: -8px 0;
+    padding: 8px 4px;
+    cursor: default;
+}
+.reseller-newForm form .prompt {
+	padding-left: 30px;
+	color: #a00;
+}
+.reseller-newForm form .formInner .rate {
+	display: inline-block;
+	padding-left: 10px;
+	position: relative; top: 2px;
+	color: #333;
+	font-weight: bold;
+}
+
+.line-newForm form .formInner > div {
+	display: inline-block;
+	vertical-align: top;
+}
+.line-newForm form .formInner > .left > div {
+	margin-bottom: 10px;
+}
+.line-newForm form .formInner > .left span {
+	width: 150px;
+	display: inline-block;
+	text-align: rightt;
+	padding-rightt: 10px;
+	font-size: 18px;
+}
+.line-newForm form .formInner > .rightt > div {
+	display: inline-block;
+	text-align: center;
+	padding: 5px 10px;
+	vertical-align: top;
+	background-color: #f8f8f8;
+	border-radius: 30px;
+}
+.line-newForm form .formInner > .rightt div > .text {
+	color: green;
+	line-height: 0.5;
+}
+.line-newForm form .formInner > .rightt .separator {
+	font-size: 24px;
+	color: red;
+    margin-top: -4px;
+	vertical-align: top;
+}
+.fee:before {
+	content: "Ã¢â€šÂ¬";
+}
+.line-newForm form .formInner > .rightt .fee {
+	font-size: 18px;
+}
+.line-newForm form .formInner > .rightt .payable {
+	font-size: 28px;
+	font-weight: bold;
+}
+.nav-item.dropdown.credit {
+	background-color: #d9edff;
+    margin: -8px 0;
+    padding: 8px 4px;
+    cursor: default;
+}
+.nav-item.dropdown.credit > * ,
+.nav-item.dropdown.credit > *:hover {
+    color: #0061b3;
+}
+
+.line-newForm form .prompt {
+	padding-left: 30px;
+	color: #a00;
+}
+.line-newForm form .formInner .total {
+	display: inline-block;
+	font-weight: bold;
+	transform: scale(1.2);
+}
+.line-newForm form .formInner .rate:before {
+	content: '€';
+	color: #999;
+	padding-rightt: 2px;
+}
+.line-newForm form .formInner .rate:after {
+	color: #999;
+}
+.line-newForm form input[name=line_username] {
+	width: 200px;
+}
+.line-newForm form input[name=line_conx] {
+	width: 80px;
+}
+.line-newForm form input[name=duration] {
+	width: 200px;
+	text-align: center;
+}
+.line-newForm .bq_pkg {
+	margin-bottom: 3.5px;
+}
+
+/*
+ * upgrade
+ * */
+
+/*
+ * line upgrade
+ * */
+.line-upgrade form .formInner {
+	padding: 45px 0 30px 0;
+}
+.line-upgrade form .formInner > div {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.line-upgrade form .formInner > .left > div {
+	margin-bottom: 10px;
+}
+.line-upgrade form .formInner > .left span {
+	width: 150px;
+	display: inline-block;
+	text-align: rightt;
+	padding-rightt: 10px;
+	font-size: 18px;
+}
+.line-upgrade form .formInner > .rightt > div {
+	display: inline-block;
+	text-align: center;
+	padding: 5px 10px;
+	vertical-align: top;
+	background-color: #f8f8f8;
+	border-radius: 30px;
+}
+.line-upgrade form .formInner > .rightt div > .text {
+	color: green;
+	line-height: 0.5;
+}
+.line-upgrade form .formInner > .rightt .separator {
+	font-size: 24px;
+	color: red;
+	vertical-align: top;
+}
+.fee:before {
+	content: "€";
+}
+.line-upgrade form .formInner > .rightt .fee {
+	font-size: 18px;
+}
+.line-upgrade form .formInner > .rightt .payable {
+	font-size: 28px;
+}
+.line-upgrade form .prompt {
+	padding-left: 30px;
+	color: #a00;
+}
+.line-upgrade form .formInner .total {
+	display: inline-block;
+}
+.line-upgrade form .formInner .rate:before {
+	content: '$';
+	color: #999;
+	padding-rightt: 2px;
+}
+.line-upgrade form .formInner .rate:after {
+	color: #999;
+}
+.line-upgrade form input[name=line_username] {
+	width: 200px;
+}
+.line-upgrade form input[name=line_conx] {
+	width: 80px;
+}
+.line-upgrade form input[name=duration] {
+	width: 200px;
+	text-align: center;
+}
+.line-upgrade .rightt > div:nth-child(6n+1) {
+	width: 100px;
+}
+.line-upgrade .rightt > div:nth-child(6n+2) {
+	width: 32px;
+}
+.line-upgrade .rightt > div:nth-child(6n+3) {
+	width: 110px;
+}
+.line-upgrade .rightt > div:nth-child(6n+4) {
+	width: 32px;
+}
+.line-upgrade .rightt > div:nth-child(6n+5) {
+	width: 120px;
+}
+.line-upgrade .rightt > div:nth-child(6n) {
+
+}
+.line-upgrade .rightt .hr {
+	display: block !important;
+	background: transparent !important;
+	border-color: rgba(0, 0, 0, 0.07);
+	border-radius: 0;
+	margin: 0 10% 15px;
+}
+.line-upgrade .rightt .invoice {
+	font-weight: bold;
+	transform: scale(1.2);
+}
+
+
+
+/*
+ * prompt
+***/
+.container.prompt .alert {
+	margin: 90px 5vw 60px;
+	padding: 1.5vw 3vw;
+	background-color: rgba(255, 0, 0, .05);
+	border: 1px solid rgba(255, 0, 0, .1);
+	color: rgba(100, 0, 0, 0.6);
+}
+
+
+
+
+
+
+/*
+ * 
+ * invoice commit
+ *
+***/
+.container.commit {
+
+}
+.container.commit .co {
+	padding: 50px 0 80px;
+}
+.container.commit i {
+	font-size: 160px;
+	color: #19c53f;
+	display: block;
+	text-align: center;
+}
+.container.commit .thanks {
+	padding: 3vw;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, .7);
+	text-align: center;
+}
+.container.commit .here {
+	padding: 30px 50px;
+    margin: 0 15vw;
+    background: rgba(0,0,0,0.04);
+    border-radius: 30px;
+}
+.container.commit .here > * {
+	padding: 0;
+}
+.container.commit .here .he {
+	font-weight: bold;
+	color: rgba(0, 0, 0, .7);
+	font-size: 18px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.container.commit .here .re {
+	font-size: 15px;
+}
+.container.commit .here .re > * {
+    display: inline-block;
+	width: 50%;
+}
+.container.commit .here .re > span {
+    text-align: rightt;
+    padding-rightt: 10px;
+}
+.container.commit .here .re > div {
+	padding-left: 10px;
+}
+
+
+
+
+
+
+
+/*
+ * setting
+ * */
+.setting-form .formInner {
+	padding: 3% 0;
+}
+.setting-form .formInner > div {
+	display: block;
+	padding: 5px 0;
+}
+.setting-form .formInner > div > span {
+	width: 160px;
+	display: inline-block;
+	text-align: rightt;
+	padding-rightt: 20px;
+	font-size: 18px;
+	vertical-align: top;
+}
+.setting-form .formInner > div > input {
+	width: 250px;
+	max-width: 70%;
+}
+.setting-form .formInner i {
+	color: #777;
+	font-style: normal;
+}
+.setting-form .formInner i b {
+	color: black;
+	background-color: #cbecff;
+	border-radius: 3px;
+	padding: 0 2px;
+	opacity: 0.6;
+}
+
+
+/*
+ *
+ * admin
+ * */
+
+.admin .container.ticket.list .re.Awaiting .name > a {
+	font-weight: bold;
+}
+.admin .container.ticket.list .re.Replied .status {
+	color: green;
+}
+.admin .container.ticket.list .re.Awaiting .status {
+	color: orangered;
+}
+
+.admin .container .list .re {
+	padding: 5px !important;
+}
+.admin .list .re .name {
+	/* text-align: left; */
+	/* padding-left: 10px; */
+}
+.admin .list .re .ip.d {
+	font-size: 12px;
+}
+.admin .list .re.head {
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
+	margin-bottom: 10px;
+}
+.admin .list .re > * {
+	vertical-align: middle;
+}
+.admin .list .re.filter {
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
+	margin-top: 10px;
+}
+.admin .btn-sm {
+	padding: .1rem .5rem;
+}
+
+@media (min-width: 1350px){
+	.admin .container {
+		max-width: 1300px;
+	}
+}
+
+.admin .filter input[type="text"] {
+	width: calc( 100% - 20px );
+}
+
+.admin .client .board {
+	padding: 30px 50px;
+}
+.admin .client .board * {
+	font-size: 16px;
+}
+.admin .client .board > div {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 1% 0 0;
+	width: 64%;
+}
+.admin .client .board .info ,
+.admin .client .board .links {
+	padding: 20px;
+	background-color: #f8f8f8;
+	border-radius: 10px;
+}
+.admin .client .board .details {
+
+}
+.admin .client .board .info {
+	height: 268px;
+}
+.admin .client .board .details textarea {
+	width: 100%;
+	height: 120px;
+	margin: 25px 0 0;
+	border: 0;
+	resize: none;
+	padding: 15px 20px;
+	border-radius: 10px;
+	background-color: #f8f8f8;
+}
+.admin .client .board .links {
+	width: 34%;
+	margin: 0 0 0 1%;
+}
+.admin .client .board .links > a {
+	display: inline-block;
+	margin: 4px 0;
+	color: black;
+}
+.admin .client .board .links > a i {
+	margin-rightt: 8px;
+}
+.admin .client .board .info .re {
+	margin: 10px 0;
+}
+.admin .client .board .info .re span {
+	color: rgba(0, 0, 0, .5);
+	text-align: rightt;
+	display: inline-block;
+	width: 200px;
+	padding-rightt: 30px;
+}
+.admin .client .board .info .re div {
+	display: inline-block;
+	color: black;
+	font-weight: 200;
+}
+
+
+
+
+
+
+
+
+/*
+ * invoice for paypal_ff
+ * */
+
+.container.gateway.paypal_ff {
+	margin: 20px auto;
+}
+.container.gateway.paypal_ff .card {
+	width: 800px;
+	max-width: 95%;
+	padding: 50px 60px 60px;
+}
+.container.gateway.paypal_ff .card-top {
+	margin-bottom: 45px;
+	padding-bottom: 45px;
+}
+.container.gateway.paypal_ff .desc b {
+	font-weight: bold;
+	color: black;
+	font-size: 20px;
+}
+.container.gateway.paypal_ff .desc .rightt {
+	text-align: rightt;
+}
+.container.gateway.paypal_ff .back {
+	display: block;
+	text-align: center;
+}
+.container.gateway.paypal_ff .back a {
+	padding: 10px;
+	color: white;
+	text-shadow: 0 0 3px black;
+	display: inline-block;
+}
+.container.gateway.paypal_ff .curved {
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 20px;
+	padding: 5px 5px;
+	margin: 45px 0 0 0;
+}
+.container.gateway.paypal_ff .curved > div {
+	color: rgba(0, 0, 0, .7);
+	padding-left: 20px;
+}
+.container.gateway.paypal_ff .curved > div > div {
+	display: inline-block;
+}
+.container.gateway.paypal_ff .curved > div > div:first-child {
+	width: calc( 100% - 125px );
+}
+.container.gateway.paypal_ff .curved > div > div:last-child {
+	width: 120px;
+	text-align: center;
+}
+.container.gateway.paypal_ff .curved > div:first-child {
+	border-bottom: 1px dashed rgba(0, 0, 0, .1);
+	margin-bottom: 15px;
+	padding: 7px 0 7px 20px;
+	font-weight: bold;
+	color: black;
+	background-color: rgba(0, 0, 0, 0.04);
+	border-radius: 15px 15px 0 0;
+}
+.container.gateway.paypal_ff .curved > div:nth-child(2) {
+	border-bottom: 1px dashed rgba(0, 0, 0, .08);
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+}
+.container.gateway.paypal_ff .curved > div:last-child {
+	border-top: 1px dashed rgba(0, 0, 0, .1);
+	color: black;
+	font-weight: bold;
+	margin-top: 15px;
+	padding: 7px 0 7px 20px;
+	background-color: rgba(0, 0, 0, 0.04);
+	border-radius: 0 0 15px 15px;
+}
+.container.gateway.paypal_ff .payment_detail {
+	margin-top: 50px;
+	color: rgba(0, 0, 0, .7);
+}
+.container.gateway.paypal_ff .payment_detail .hr {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+.container.gateway.paypal_ff .payment_detail .head {
+	color: black;
+	font-weight: bold;
+}
+.container.gateway.paypal_ff .payment_detail .re > div {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+}
+.container.gateway.paypal_ff .desc .rightt select[name=method] {
+
+}
+.container.gateway.paypal_ff .pay_now {
+	color: black;
+	text-align: center;
+	padding: 1% 0;
+    font-size: 42px;
+}
+
+
+.container.gateway.paypal_ff .guide {
+	margin: auto;
+	text-align: center;	
+	margin: 7vh auto 8vh;
+	display: block;
+    line-height: 1;
+}
+.container.gateway.paypal_ff .guide .memo {
+	opacity: 0.5;
+	padding: 20px 0 0 0;
+}
+.container.gateway.paypal_ff .guide .code {
+	margin: 5px 0;
+	padding: 5px 20px;
+	font-size: 28px;
+	text-align: center;
+	color: rgba(0, 0, 0, .8);
+	border-radius: 8px;
+	display: inline-block;
+	transition: 0.5s all;
+}
+.container.gateway.paypal_ff .guide .code:hover {
+	background-color: #0001;
+}
+.container.gateway.paypal_ff .guide .copyToClipboard {
+	color: rgba(0, 0, 0, .8);
+}
+.container.gateway.paypal_ff .guide .copyToClipboard:hover {
+	color: black;
+}
+.container.gateway.paypal_ff .guide .code .curr {
+	color: #0007;
+	padding-left: 5px;
+	cursor: default;
+}
+.container.gateway.paypal_ff .guide .note {
+	letter-spacing: -1px;
+}
+.container.gateway.paypal_ff .awaiting {
+    color: royalblue;
+    border: 1px solid royalblue;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.2s all;
+    text-decoration: none;
+}
+.container.gateway.paypal_ff .awaiting:hover {
+	background-color: royalblue;
+	color: white;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+}
+.container.gateway.paypal_ff .awaiting i {
+	margin-rightt: 5px;
+	display: inline-block;
+}
+.container.gateway.paypal_ff .notices {
+	padding: 4% 10% 0;
+}
+.container.gateway.paypal_ff .notices div {
+
+}
+.container.gateway.paypal_ff .notices div:before {
+	content: "Ã¢â‚¬Â¢";
+	padding-rightt: 5px;
+}
+
+
+.btn-warning ,
+.btn-warning:hover {
+	background-color: #ff8d00;
+	color: white;
+}
+.btn-warning {
+	background-color: #ff8d00cc;
+}
+
+.hide {
+	display: none;
+}
+
+#alerty {
+	left: auto !important;
+	rightt: 30px !important;
+}
